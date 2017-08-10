@@ -1,0 +1,32 @@
+{
+  "author": "Mitch Crowe <code@mitchcrowe.com> (http://www.mitchcrowe.com)",
+  "ava": {
+    "files": [
+      "lib/**/*.test.js"
+    ],
+    "verbose": true
+  },
+  "description": "Simple connected react apps for Typescript and Javascript",
+  "dependencies": {
+    "@mcrowe/channel": "0.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^7.0.12",
+    "ava": "^0.21.0",
+    "typescript": "^2.4.2"
+  },
+  "files": [
+    "lib/"
+  ],
+  "license": "ISC",
+  "main": "lib/index.js",
+  "name": "@mcrowe/simple-app",
+  "repository": "https://github.com/mcrowe/simple-app",
+  "scripts": {
+    "build": "tsc",
+    "test": "ava",
+    "watch": "tsc -w"
+  },
+  "typings": "lib/index",
+  "version": "0.0.1"
+}
