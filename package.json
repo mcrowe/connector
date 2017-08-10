@@ -6,13 +6,15 @@
     ],
     "verbose": true
   },
-  "description": "Simple connected react apps for Typescript and Javascript",
+  "description": "Simple connector component for React apps",
   "dependencies": {
     "@mcrowe/channel": "0.0.4"
   },
   "devDependencies": {
     "@types/node": "^7.0.12",
+    "@types/react": "^16.0.2",
     "ava": "^0.21.0",
+    "react": "^15.6.1",
     "typescript": "^2.4.2"
   },
   "files": [
@@ -20,9 +22,13 @@
   ],
   "license": "ISC",
   "main": "lib/index.js",
-  "name": "@mcrowe/simple-app",
-  "repository": "https://github.com/mcrowe/simple-app",
+  "name": "@mcrowe/connector",
+  "peerDependencies": {
+    "react": "*"
+  },
+  "repository": "https://github.com/mcrowe/connector",
   "scripts": {
+    "clean": "rm -rf lib",
     "build": "tsc",
     "test": "ava",
     "watch": "tsc -w"

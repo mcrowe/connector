@@ -1,10 +1,30 @@
-# simple-app
+# Connector
 
-Simple connected react apps for Typescript and Javascript
+Simple connector component for React apps
 
 ## Usage
 
-> npm install @mcrowe/simple-app --save
+> npm install @mcrowe/connector --save
+
+```js
+import * as React from 'react'
+import * as ReactDom from 'react-dom'
+import Connector from '@mcrowe/connector'
+
+const connector = new Connector()
+
+class Root extends React.Component {
+  // ...
+}
+
+ReactDom.render(
+  React.createElement( connector.wrap(Root) ),
+  document.getElementById('app')
+)
+
+// When the app should refresh...
+connector.refresh()
+```
 
 ## Development
 
